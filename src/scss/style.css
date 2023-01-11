@@ -1,13 +1,31 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Inconsolata:wght@600&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Michroma&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100&family=Tapestry&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Frank Ruhl Libre", serif;
+  font-family: "Inconsolata", monospace;
+  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Michroma", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Philosopher", sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tapestry", cursive;
+  font-family: "Work Sans", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 .navbar {
-  position: relative;
+  display: block;
+}
+@media screen and (max-width: 990px) {
+  .navbar {
+    display: none;
+  }
 }
 .navbar .logo {
   margin-right: 20vh;
@@ -35,38 +53,35 @@
   position: relative;
   padding: 10px 20px;
   list-style: none;
-  font-size: 14px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #6d6a6a;
-  font-family: "Montserrat", sans-serif;
-  cursor: pointer;
+}
+.navbar .list .menu li:hover ::before {
+  width: 100%;
+}
+.navbar .list .menu li:hover .dropdown {
+  height: auto;
+  opacity: 1;
+  transition: 0.3s ease;
 }
 .navbar .list .menu li:hover .wide_bottom {
   display: block;
   opacity: 1;
   transition: 0.3s ease-in-out;
 }
-.navbar .list .menu li:hover .dropdown {
-  display: block;
-  opacity: 1;
-  transition: 0.3s ease-in-out;
-}
 .navbar .list .menu li .dropdown {
-  display: none;
+  height: 0;
   background-color: white;
   opacity: 0;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
   position: absolute;
   top: 100%;
-  left: -26%;
-  margin: 0;
+  left: -5%;
+  margin-top: 35px;
   padding: 0;
   z-index: 999;
+  overflow: hidden;
 }
 .navbar .list .menu li .dropdown ul {
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+  padding-left: 0;
 }
 .navbar .list .menu li .dropdown ul li .dropdown-item {
   padding: 0 10px 0 0;
@@ -75,45 +90,88 @@
   text-transform: capitalize;
   font-weight: 400;
   color: #6d6a6a;
-  font-family: "Montserrat", sans-serif;
   text-align: left;
+  font-family: "Montserrat", sans-serif;
+  padding-right: 80px;
 }
-.navbar .list .menu .dropdown_cart {
+.navbar .list .menu li .dropdown ul li .dropdown-item :nth-child(3) .bi-chevron-right {
+  font-size: 8px;
+  margin-left: 49px;
+}
+.navbar .list .menu li .dropdown ul li .dropdown-item :nth-child(4) .bi-chevron-right {
+  font-size: 8px;
+  margin-left: 40px;
+}
+.navbar .list .menu li .dropdown ul li .dropdown-item :nth-child(5) .bi-chevron-right {
+  font-size: 8px;
+  margin-left: 49px;
+}
+.navbar .list .menu li .dropdown ul li .dropdown-item .bi-chevron-left {
+  font-size: 8px;
+}
+.navbar .list .menu li .active::before {
+  content: "";
+  height: 1.5px;
+  background-color: #6d6a6a;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  transition: width 0.2s ease-in-out;
+}
+.navbar .list .menu li span {
   position: relative;
-  padding: 10px 20px;
-  list-style: none;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
-  color: #6d6a6a;
+  color: #4b4747;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
 }
-.navbar .list .menu .dropdown_cart:hover :nth-child(1) {
-  display: block;
-}
-.navbar .list .menu .dropdown_cart ul li {
-  display: none;
+.navbar .list .menu li span::before {
+  content: "";
+  height: 1.5px;
+  background-color: #6d6a6a;
   position: absolute;
-  top: 80%;
+  bottom: -1px;
   left: 0;
-  padding: 2px 15px;
-  background-color: white;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
-  font-size: 12px;
+  width: 0;
+  transition: width 0.2s ease-in-out;
+}
+.navbar .list .menu .nav-item:hover i {
+  color: #f34f3f;
+}
+.navbar .list .menu .nav-item .dropdown-menu {
+  position: absolute;
+  top: 200%;
+  left: -5%;
+  right: 10%;
+  padding: 10px 20px;
+  width: 300px;
+  height: 50px;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 0;
+}
+.navbar .list .menu .dropdown_cart img {
+  width: 25px;
+  cursor: pointer;
+}
+.navbar .list .menu .dropdown_cart .cart {
+  position: relative;
+  font-size: 13px;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: 400;
-  color: #6d6a6a;
+  color: #4b4747;
   font-family: "Montserrat", sans-serif;
-  text-align: left;
+  cursor: pointer;
 }
 .navbar .wide_bottom {
   background-color: white;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
   opacity: 0;
-  display: none;
   width: 1210px;
   transition: 0.3s ease-in-out;
   position: absolute;
@@ -125,10 +183,19 @@
   margin: 0;
   padding: 0;
 }
-.navbar .wide_bottom ul li {
+.navbar .wide_bottom ul .items {
   list-style: none;
 }
-.navbar .wide_bottom ul li .items {
+.navbar .wide_bottom ul .items .bold {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  text-transform: none;
+  line-height: 1em;
+  color: #1b1b1b;
+  font-weight: 500;
+  text-decoration: none;
+}
+.navbar .wide_bottom ul .items .it {
   font-size: 14px;
   text-decoration: none;
   text-transform: capitalize;
@@ -136,6 +203,74 @@
   color: #6d6a6a;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+}
+
+#mobile_menu {
+  position: relative;
+  display: none;
+  z-index: 1;
+}
+@media screen and (max-width: 990px) {
+  #mobile_menu {
+    display: block;
+  }
+}
+#mobile_menu .pic {
+  width: 200px;
+  height: 50px;
+}
+#mobile_menu .pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#mobile_menu .menu_button i {
+  float: right;
+  font-size: 30px;
+}
+#mobile_menu .side {
+  display: flex;
+  width: 224px;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0%;
+  z-index: 66;
+  background-color: red;
+  height: 400px;
+  transform: translateX(648px);
+}
+#mobile_menu .side span {
+  float: right;
+}
+#mobile_menu .side span i {
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+#mobile_menu .side .menu_drop_mob .mob_item {
+  list-style: none;
+  color: #6d6a6a;
+}
+#mobile_menu .side .menu_drop_mob .mob_item i {
+  font-size: 10px;
+}
+#mobile_menu .side .menu_drop_mob .mob_item .iti {
+  display: none;
+  background-color: greenyellow;
+  opacity: 0;
+  height: 0;
+  transition: 0.3s ease;
+  display: none;
+}
+#mobile_menu .side .menu_drop_mob .mob_item .iti li {
+  list-style: none;
+}
+#mobile_menu .side .menu_drop_mob .mob_item .iti li .dropdown-item {
+  text-transform: capitalize;
+  font-size: 12px;
 }
 
 main {
@@ -505,8 +640,7 @@ main #experts .team_holder .team_info span {
   font-size: 12px;
   margin: 20px;
 }
-
-#join {
+main #join {
   z-index: 0;
   background-image: url("https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-background-img.jpg");
   background-position: 50% -29px;
@@ -517,7 +651,7 @@ main #experts .team_holder .team_info span {
   overflow: hidden;
   min-height: 70vh;
 }
-#join .wrapper {
+main #join .wrapper {
   z-index: 99;
   background: scroll;
   display: flex;
@@ -525,7 +659,7 @@ main #experts .team_holder .team_info span {
   align-items: center;
   flex-direction: column;
 }
-#join .wrapper h3 {
+main #join .wrapper h3 {
   color: white;
   display: block;
   margin: 0 0 19px;
@@ -534,18 +668,18 @@ main #experts .team_holder .team_info span {
   font-family: "Playfair Display", serif;
   font-weight: 400;
 }
-#join .wrapper #poct {
+main #join .wrapper #poct {
   max-width: 630px;
   height: 58px;
 }
-#join .wrapper #poct input {
+main #join .wrapper #poct input {
   width: 450px;
   padding: 16px 30px;
   margin: 0;
   height: 58px;
   border: 1px solid transparent;
 }
-#join .wrapper #poct .btn {
+main #join .wrapper #poct .btn {
   width: 130px;
   height: 58px;
   margin-left: -5px;
@@ -569,24 +703,23 @@ main #experts .team_holder .team_info span {
   letter-spacing: 0.1em;
   font-weight: 500;
 }
-#join .wrapper #poct #netice {
+main #join .wrapper #poct #netice {
   color: red;
   display: none;
   text-align: center;
   margin: 20px auto;
 }
-#join .wrapper #poct #result {
+main #join .wrapper #poct #result {
   color: #ebebeb;
   border: 1px solid green;
   display: none;
   text-align: center;
   margin: 20px auto;
 }
-
-#blog {
+main #blog {
   background-color: #f7f7f7;
 }
-#blog .title_top h2 {
+main #blog .title_top h2 {
   margin: 0 auto;
   font-size: 38px;
   line-height: 1.447em;
@@ -600,7 +733,7 @@ main #experts .team_holder .team_info span {
   letter-spacing: 0;
   text-align: center;
 }
-#blog .title_top p {
+main #blog .title_top p {
   font-size: 19px;
   line-height: 29px;
   margin: 20px 70px;
@@ -611,7 +744,7 @@ main #experts .team_holder .team_info span {
   letter-spacing: 0;
   font-weight: 400;
 }
-#blog .title_top .team_holder .team_info h6 {
+main #blog .title_top .team_holder .team_info h6 {
   font-family: "Montserrat", serif;
   text-align: center;
   font-size: 10px;
@@ -621,21 +754,21 @@ main #experts .team_holder .team_info span {
   color: #1b1b1b;
   margin: 0;
 }
-#blog .blog_card {
+main #blog .blog_card {
   width: 440px;
   height: 400px;
   position: relative;
 }
-#blog .blog_card:hover img {
+main #blog .blog_card:hover img {
   transform: scale(1.05);
 }
-#blog .blog_card .blog_img {
+main #blog .blog_card .blog_img {
   width: 440px;
   height: 250px;
   overflow: hidden;
   transition: 0.3s ease;
 }
-#blog .blog_card .blog_img img {
+main #blog .blog_card .blog_img img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
@@ -645,7 +778,7 @@ main #experts .team_holder .team_info span {
   transition: 0.3s ease;
   overflow: hidden;
 }
-#blog .blog_card .data {
+main #blog .blog_card .data {
   position: absolute;
   top: 10px;
   left: 30px;
@@ -657,16 +790,16 @@ main #experts .team_holder .team_info span {
   text-align: center;
   font-family: Montserrat, sans-serif;
 }
-#blog .blog_card .data:hover {
+main #blog .blog_card .data:hover {
   color: #f34f3f;
   transition: 0.3s ease;
 }
-#blog .blog_card .blog_text {
+main #blog .blog_card .blog_text {
   display: inline-block;
   height: 50px;
   text-align: center;
 }
-#blog .blog_card .blog_text h5 {
+main #blog .blog_card .blog_text h5 {
   font-size: 22px;
   line-height: 1.363em;
   margin: 20px 0 3px;
@@ -674,7 +807,7 @@ main #experts .team_holder .team_info span {
   color: #2b2b2b;
   font-weight: 400;
 }
-#blog .blog_card .blog_text p {
+main #blog .blog_card .blog_text p {
   font-size: 16px;
   padding: 0 50px;
   font-family: Lora, serif;
@@ -682,22 +815,24 @@ main #experts .team_holder .team_info span {
   line-height: 29px;
   font-weight: 400;
 }
-
-#karusel #carouselExampleInterval .carousel-control-prev {
+main #karusel #carouselExampleInterval .carousel-control-prev {
   width: 130px;
   height: 30px;
   background-color: #f34f3f;
 }
-#karusel #carouselExampleInterval .carousel-inner .carousel-item {
+main #karusel #carouselExampleInterval .carousel-inner {
+  height: 310px;
+}
+main #karusel #carouselExampleInterval .carousel-inner .carousel-item {
   margin-bottom: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#karusel #carouselExampleInterval .carousel-inner .carousel-item .text_holder {
+main #karusel #carouselExampleInterval .carousel-inner .carousel-item .text_holder {
   text-align: center;
 }
-#karusel #carouselExampleInterval .carousel-inner .carousel-item .text_holder p {
+main #karusel #carouselExampleInterval .carousel-inner .carousel-item .text_holder p {
   color: #4b4747;
   font-family: Lora, serif;
   font-style: italic;
