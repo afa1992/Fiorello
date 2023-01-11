@@ -42,3 +42,60 @@ if(BtnSubmit){
         }
     })
 }
+
+const Clck=document.querySelector('.bi-list ')
+const Drop=document.querySelector('.side')
+const Cls=document.querySelector('.bi-x-circle-fill')
+
+if(Clck){
+    Clck.addEventListener('click',()=>{
+        Drop.style.transform='translateX(448px)'
+        Drop.style.transition='.3s ease'
+    })
+
+ 
+}
+
+if(Cls){
+    Cls.addEventListener('click',()=>{
+        Drop.style.transform='translateX(670px)'
+        Drop.style.transition='.3s ease'
+    })
+
+ 
+}
+
+
+const Klk =document.querySelector('.mob_item');
+const Green=document.querySelector('.iti');
+
+
+
+
+
+if (Klk) {
+   
+    Klk.addEventListener('click', (e) => { 
+        e.preventDefault()
+
+        if (Green.style.display === 'none') {
+            Green.style.display = 'block';
+        } else {
+            Green.style.display = 'none';
+
+        }
+
+
+    })
+
+
+}
+
+
+
+
+
+
+
+
+
