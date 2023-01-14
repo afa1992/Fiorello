@@ -1,340 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/scss/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="../src/scss/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="../src/scss/swiper-bundle.min.css">
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/scss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="../src/scss/swiper-bundle.min.css">
     <title>contact</title>
 </head>
+
 <body>
 
-        <!-- Navbar created -->
- <nav id="navbar">
-    <div class="container">
-        <div class="row my-4">
-            <div class="col-lg-3">
-                <div class="logo">
-                    <a href="../public/index.html"> <img src="https://fiorello.qodeinteractive.com/wp-content/themes/fiorello/assets/img/logo.png" alt=""></a>
+    <!-- Navbar created -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-lg-3">
+                    <div class="logo">
+                        <a href="../public/index.html"> <img
+                                src="https://fiorello.qodeinteractive.com/wp-content/themes/fiorello/assets/img/logo.png"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="menu">
+                        <ul>
+                            <li class="home"> <a href="#" class="ho">home</a>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li class="dr_item"><a href="#">Main Home</a></li>
+                                        <li class="dr_item"><a href="#">Grid Home</a></li>
+                                        <li class="dr_item"><a href="#">Flower Shop</a></li>
+                                        <li class="dr_item"><a href="#">Animated Slider</a></li>
+                                        <li class="dr_item"><a href="#">Metro Showcase</a></li>
+                                        <li class="dr_item"><a href="#">Carousel Showcase</a></li>
+                                        <li class="dr_item"><a href="#">Landing</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="pages"> <a href="#">pages</a>
+
+                                <div class="dropdown">
+                                    <ul>
+                                        <li class="dr_item"><a href="#">About Us</a></li>
+                                        <li class="dr_item"><a href="#">FAQ Page</a></li>
+                                        <li class="dr_item"><a href="../public/contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="shop"><a href="#">shop</a>
+                                <div class="dropdown">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-3 ">
+                                                <ul>
+                                                    <p>Product Types</p>
+                                                    <li class="dr_item"><a href="#">Standard Product</a></li>
+                                                    <li class="dr_item"><a href="#">Grouped Product</a></li>
+                                                    <li class="dr_item"><a href="#">Variable Product</a></li>
+                                                    <li class="dr_item"><a href="#">Virtual Product</a></li>
+                                                    <li class="dr_item"><a href="#">External Product</a></li>
+                                                    <li class="dr_item"><a href="#">Downloadable Product</a></li>
+                                                    <li class="dr_item"><a href="#">On Sale Product</a></li>
+                                                    <li class="dr_item"><a href="#">New Product</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 ">
+                                                <ul>
+                                                    <p>Shop Pages</p>
+                                                    <li class="dr_item"><a href="#">My Account</a></li>
+                                                    <li class="dr_item"><a href="#">Cart</a></li>
+                                                    <li class="dr_item"><a href="#">Flower Shop</a></li>
+                                                    <li class="dr_item"><a href="#">Checkout</a></li>
+                                                    <li class="dr_item"><a href="#">Orders</a></li>
+                                                    <li class="dr_item"><a href="#">Downloads</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 ">
+                                                <ul>
+                                                    <p>Product List</p>
+                                                    <li class="dr_item"><a href="#">Without Sidebar</a></li>
+                                                    <li class="dr_item"><a href="#">With Category Filter</a></li>
+                                                    <li class="dr_item"><a href="#">With Ordering Filter</a></li>
+                                                    <li class="dr_item"><a href="#">Shop Carousel</a></li>
+                                                    <li class="dr_item"><a href="#">Product Categories</a></li>
+                                                    <li class="dr_item"><a href="#">Single Category</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 ">
+                                                <ul>
+                                                    <p>Shop Layouts</p>
+                                                    <li class="dr_item"><a href="#">Two Columns Grid</a></li>
+                                                    <li class="dr_item"><a href="#">Three Columns Grid</a></li>
+                                                    <li class="dr_item"><a href="#">Four Columns Grid</a></li>
+                                                    <li class="dr_item"><a href="#">Four Columns Wide</a></li>
+                                                    <li class="dr_item"><a href="#">Five Columns Wide</a></li>
+                                                    <li class="dr_item"><a href="#">Six Columns Wide</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="portfolio"> <a href="#">portfolio</a>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li class="dr_item"><a href="#">Standard</a></li>
+                                        <li class="dr_item"><a href="#">Masonry</a></li>
+                                        <li class="dr_item"><a href="#">Gallery</a></li>
+                                        <li class="dr_item"><a href="#">Portfolio Single</a></li>
+                                        <li class="dr_item_sml"><a href="#">Portfolio Layouts</a>
+                                            <ul class="sml">
+
+                                                <li class="small_item"> <a href="#">Two columns</a></li>
+                                                <li class="small_item"> <a href="#">Three columns</a></li>
+                                                <li class="small_item"> <a href="#">Four columns</a></li>
+                                                <li class="small_item"> <a href="#">Five columns</a></li>
+                                                <li class="small_item"> <a href="#">Six columns</a></li>
+                                            </ul>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="blog"> <a href="#">blog</a>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li class="dr_item"><a href="#">Standard</a></li>
+                                        <li class="dr_item"><a href="#">Masonry</a></li>
+                                        <li class="dr_item"><a href="#">Gallery</a></li>
+
+                                        <li class="dr_item_sml"><a href="#">Post Types</a>
+                                            <ul class="sml">
+                                                <li class="small_item"> <a href="#">Gallery</a></li>
+                                                <li class="small_item"> <a href="#">Link </a></li>
+                                                <li class="small_item"> <a href="#">Quote</a></li>
+                                                <li class="small_item"> <a href="#">Audio</a></li>
+                                                <li class="small_item"> <a href="#">Video</a></li>
+
+                                            </ul>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="elements"><a href="#">elements</a>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li class="dr_item"><a href="#">Classic</a></li>
+                                        <li class="dr_item"><a href="#">Infographic</a></li>
+                                        <li class="dr_item"><a href="#">Interactive</a></li>
+
+                                        <li class="dr_item_sml"><a href="#">Typhography</a>
+                                            <ul class="sml">
+                                                <li class="small_item"> <a href="#">Headings</a></li>
+                                                <li class="small_item"> <a href="#">Columns </a></li>
+                                                <li class="small_item"> <a href="#">Section title</a></li>
+                                                <li class="small_item"> <a href="#">Dropcaps</a></li>
+                                                <li class="small_item"> <a href="#">Blockquote</a></li>
+                                                <li class="small_item"> <a href="#">Highlights</a></li>
+                                                <li class="small_item"> <a href="#">Sparators</a></li>
+                                                <li class="small_item"> <a href="#">Custom font</a></li>
+
+                                            </ul>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li class="search"> <i class="bi bi-search"></i>
+                                <div class="search_box">
+                                    <form action="">
+                                        <input type="text" placeholder="Search">
+                                        <button class="button"><i class="bi bi-search"></i></button>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="add_cart"><i class="bi bi-bag"></i>
+                                <div class="dropdown">
+                                    <p class="cart">No products in the cart.</p>
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+
                 </div>
             </div>
-            <div class="col-lg-9">
-                <div class="menu">
-                    <ul>
-                      <li class="home">         <a href="#" class="ho">home</a>
-                    <div class="dropdown">
-                        <ul>
-                            <li class="dr_item"><a  href="#">Main Home</a></li>
-                            <li class="dr_item"><a href="#">Grid Home</a></li>
-                            <li class="dr_item"><a href="#">Flower Shop</a></li>
-                            <li class="dr_item"><a href="#">Animated Slider</a></li>
-                            <li class="dr_item"><a href="#">Metro Showcase</a></li>
-                            <li class="dr_item"><a href="#">Carousel Showcase</a></li>
-                            <li class="dr_item"><a href="#">Landing</a></li>
-                        </ul>
+        </div>
+
+
+    </nav>
+    <!-- Mobile-Navbar created -->
+    <div class="container">
+        <div class="row">
+            <div class="mobil_nav">
+                <div class="col-md-6">
+                    <div class="logo">
+                        <a href="../public/index.html"> <img
+                                src="https://fiorello.qodeinteractive.com/wp-content/themes/fiorello/assets/img/logo.png"
+                                alt=""></a>
                     </div>
-                    </li>
-                      <li class="pages">        <a href="#">pages</a>
-    
-                        <div class="dropdown">
-                            <ul>
-                                <li class="dr_item"><a href="#">About Us</a></li>
-                                <li class="dr_item"><a href="#">FAQ Page</a></li>
-                                <li class="dr_item"><a href="../public/contact.html">Contact Us</a></li>
-                              </ul>
-                        </div>
-                    </li>
-                      <li class="shop"><a href="#">shop</a>
-                    <div class="dropdown">
-                        <div class="container">
-                            <div class="row">
-                              <div class="col-lg-3 ">
-                                <ul>
-                                  <p>Product Types</p>
-                                  <li class="dr_item"><a href="#">Standard Product</a></li>
-                                  <li class="dr_item"><a href="#">Grouped Product</a></li>
-                                  <li class="dr_item"><a href="#">Variable Product</a></li>
-                                  <li class="dr_item"><a href="#">Virtual Product</a></li>
-                                  <li class="dr_item"><a href="#">External Product</a></li>
-                                  <li class="dr_item"><a href="#">Downloadable Product</a></li>
-                                  <li class="dr_item"><a href="#">On Sale Product</a></li>
-                                  <li class="dr_item"><a href="#">New Product</a></li>
-                                </ul>
-                              </div>
-                              <div class="col-lg-3 ">
-                                <ul>
-                                  <p>Shop Pages</p>
-                                  <li class="dr_item"><a href="#">My Account</a></li>
-                                  <li class="dr_item"><a href="#">Cart</a></li>
-                                  <li class="dr_item"><a href="#">Flower Shop</a></li>
-                                  <li class="dr_item"><a href="#">Checkout</a></li>
-                                  <li class="dr_item"><a href="#">Orders</a></li>
-                                  <li class="dr_item"><a href="#">Downloads</a></li>
-                                </ul>
-                              </div>
-                              <div class="col-lg-3 ">
-                                <ul>
-                                  <p>Product List</p>
-                                  <li class="dr_item"><a href="#">Without Sidebar</a></li>
-                                  <li class="dr_item"><a href="#">With Category Filter</a></li>
-                                  <li class="dr_item"><a href="#">With Ordering Filter</a></li>
-                                  <li class="dr_item"><a href="#">Shop Carousel</a></li>
-                                  <li class="dr_item"><a href="#">Product Categories</a></li>
-                                  <li class="dr_item"><a href="#">Single Category</a></li>
-                                </ul>
-                              </div>
-                              <div class="col-lg-3 ">
-                                <ul>
-                                  <p>Shop Layouts</p>
-                                  <li class="dr_item"><a href="#">Two Columns Grid</a></li>
-                                  <li class="dr_item"><a href="#">Three Columns Grid</a></li>
-                                  <li class="dr_item"><a href="#">Four Columns Grid</a></li>
-                                  <li class="dr_item"><a href="#">Four Columns Wide</a></li>
-                                  <li class="dr_item"><a href="#">Five Columns Wide</a></li>
-                                  <li class="dr_item"><a href="#">Six Columns Wide</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                    </li>
-                      <li class="portfolio">    <a href="#">portfolio</a>
-                    <div class="dropdown">
-                        <ul>
-                            <li class="dr_item"><a href="#">Standard</a></li> 
-                            <li class="dr_item"><a href="#">Masonry</a></li>
-                            <li class="dr_item"><a href="#">Gallery</a></li>
-                            <li class="dr_item"><a href="#">Portfolio Single</a></li>
-                            <li class="dr_item_sml"><a href="#">Portfolio Layouts</a>
-                            <ul class="sml">
-                      
-                             <li class="small_item"> <a href="#">Two columns</a></li>
-                             <li class="small_item"> <a href="#">Three columns</a></li>
-                             <li class="small_item"> <a href="#">Four columns</a></li>
-                             <li class="small_item"> <a href="#">Five columns</a></li>
-                             <li class="small_item"> <a href="#">Six columns</a></li>
-                            </ul>
-                            </li>
-                         
-                            
-                          </ul>
-                    </div>
-                    </li>
-                      <li class="blog">         <a href="#">blog</a>
-                        <div class="dropdown">
-                            <ul>
-                                <li class="dr_item"><a href="#">Standard</a></li> 
-                                <li class="dr_item"><a href="#">Masonry</a></li>
-                                <li class="dr_item"><a href="#">Gallery</a></li>
-                            
-                                <li class="dr_item_sml"><a href="#">Post Types</a>
-                                <ul class="sml">
-                                 <li class="small_item"> <a href="#">Gallery</a></li>
-                                 <li class="small_item"> <a href="#">Link </a></li>
-                                 <li class="small_item"> <a href="#">Quote</a></li>
-                                 <li class="small_item"> <a href="#">Audio</a></li>
-                                 <li class="small_item"> <a href="#">Video</a></li>
-                              
-                                </ul>
-                                </li>
-                             
-                                
-                              </ul>
-                        </div>
-                    </li>
-                      <li class="elements"><a href="#">elements</a>
-                        <div class="dropdown">
-                            <ul>
-                                <li class="dr_item"><a href="#">Classic</a></li> 
-                                <li class="dr_item"><a href="#">Infographic</a></li>
-                                <li class="dr_item"><a href="#">Interactive</a></li>
-                            
-                                <li class="dr_item_sml"><a href="#">Typhography</a>
-                                <ul class="sml">
-                                 <li class="small_item"> <a href="#">Headings</a></li>
-                                 <li class="small_item"> <a href="#">Columns </a></li>
-                                 <li class="small_item"> <a href="#">Section title</a></li>
-                                 <li class="small_item"> <a href="#">Dropcaps</a></li>
-                                 <li class="small_item"> <a href="#">Blockquote</a></li>
-                                 <li class="small_item"> <a href="#">Highlights</a></li>
-                                 <li class="small_item"> <a href="#">Sparators</a></li>
-                                 <li class="small_item"> <a href="#">Custom font</a></li>
-                               
-                                </ul>
-                                </li>
-                             
-                                
-                              </ul>
-                        </div>
-                    
-                    </li>
-                      <li class="search"> <i class="bi bi-search"></i>
-                        <div class="search_box">
-                            <form action="">
-                                <input type="text" placeholder="Search">
-                                <button class="button"><i class="bi bi-search"></i></button>
-                            </form>
-                        </div>
-                    </li>
-                    <li class="add_cart"><i class="bi bi-bag"></i> 
-                        <div class="dropdown">
-                        <p class="cart">No products in the cart.</p>
-                        </div>
-                    
-                    </li>
-    
-                    </ul>
-                    
-    
                 </div>
-             
+                <div class="col-md-6">
+                    <div class="nav_toggle">
+                        <div class="open">
+                            <i class="bi bi-list"></i>
+                        </div>
+                        <div class="nav_box">
+                            <div class="close_btn">
+                                <i class="bi bi-x-lg"></i>
+                            </div>
+                            <div class="res_menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">HOME <i class="bi bi-caret-down-fill"></i></a>
+                                        <div class="dropdown">
+                                            <ul>
+                                                <li><a href="#">Main Home</a></li>
+                                                <li><a href="#">Grid Home</a></li>
+                                                <li><a href="#">Flower Shop</a></li>
+                                                <li><a href="#">Animated Slider</a></li>
+                                                <li><a href="#">Metro Showcase</a></li>
+                                                <li><a href="#">Carousel Showcase</a></li>
+                                                <li><a href="#">Landing</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">PAGES <i class="bi bi-caret-down-fill"></i></a>
+                                        <div class="dropdown">
+                                            <ul>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">FAQ Page</a></li>
+                                                <li><a href="#">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">SHOP <i class="bi bi-caret-down-fill"></i></a>
+                                        <div class="dropdown">
+                                            <ul>
+
+                                                <li><a href="#">Standard Product</a></li>
+                                                <li><a href="#">Grouped Product</a></li>
+                                                <li><a href="#">Variable Product</a></li>
+                                                <li><a href="#">Virtual Product</a></li>
+                                                <li><a href="#">External Product</a></li>
+                                                <li><a href="#">Downloadable Product</a></li>
+                                                <li><a href="#">On Sale Product</a></li>
+                                                <li><a href="#">New Product</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">PORTFOLIO <i class="bi bi-caret-down-fill"></i></a>
+
+                                        <div class="dropdown">
+                                            <ul>
+                                                <li><a href="#">Standard</a></li>
+                                                <li><a href="#">Gallery</a></li>
+                                                <li><a href="#">Masonry</a></li>
+                                                <li>
+                                                    <a href="#">Portfolio Layouts</a>
+
+                                                </li>
+                                                <li>
+                                                    <a href="#">Portfolio Single </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <a href="#">BLOG <i class="bi bi-caret-down-fill"></i></a>
+                                        <div class="dropdown">
+                                            <ul>
+                                                <li><a href="#">Masonry</a></li>
+                                                <li><a href="#">Standard</a></li>
+                                                <li>
+                                                    <a href="#">Post Types</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">ELEMENTS <i class="bi bi-caret-down-fill"></i></a>
+                                        <div class="dropdown">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Classic</a>
+                                                    <i class="bi bi-chevron-right"></i>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Infographic</a>
+                                                    <i class="bi bi-chevron-right"></i>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Interactive</a>
+                                                    <i class="bi bi-chevron-right"></i>
+                                                </li>
+                                                <li>
+
+                                                    <a href="#">Typographic</a>
+                                                    <i class="bi bi-chevron-right"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
-    
-    
-    </nav> 
-     <!-- Mobile-Navbar created -->
-         <div class="container">
-            <div class="row">
-                <div class="mobil_nav">
-                <div class="col-md-6">
-                    <div class="logo">
-                        <a href="../public/index.html"> <img src="https://fiorello.qodeinteractive.com/wp-content/themes/fiorello/assets/img/logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                   <div class="nav_toggle">
-                    <div class="open">
-                        <i class="bi bi-list"></i>
-                    </div>
-                    <div class="nav_box">
-                        <div class="close_btn">
-                          <i class="bi bi-x-lg"></i>
+
+
+    <!-- Main Created -->
+
+    <main>
+        <section id="googlemap my-5 py-2">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.580570127673!2d-77.02767082412936!3d38.91070577172132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7ee63911361%3A0x6dfb3a81f957210d!2s1503%2010th%20St%20NW%2C%20Washington%2C%20DC%2020001%2C%20USA!5e0!3m2!1sen!2s!4v1673669541241!5m2!1sen!2s"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+
+        <section id="custom">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="custom_left">
+                            <div class="custom_img">
+                                <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/contact-img-1.png"
+                                    alt="">
+                            </div>
+                          
+                            <h2 class="top">
+                                We take <span>flowers</span> personally, with your thoughts in hand… </h2>
+                        <div class="center">
+
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus. Donec quam felis, ultricies nec.
                         </div>
-                       <div class="res_menu">
-                        <ul>
-                            <li >
-                              <a href="#">HOME <i class="bi bi-caret-down-fill"></i></a>
-                              <div class="dropdown">
-                                <ul>
-                                  <li><a  href="#">Main Home</a></li>
-                                  <li><a href="#">Grid Home</a></li>
-                                  <li><a href="#">Flower Shop</a></li>
-                                  <li><a href="#">Animated Slider</a></li>
-                                  <li><a href="#">Metro Showcase</a></li>
-                                  <li><a href="#">Carousel Showcase</a></li>
-                                  <li><a href="#">Landing</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li >
-                              <a href="#">PAGES <i class="bi bi-caret-down-fill"></i></a>
-                              <div class="dropdown">
-                                <ul>
-                                  <li><a href="#">About Us</a></li>
-                                  <li><a href="#">FAQ Page</a></li>
-                                  <li><a href="#">Contact Us</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li >
-                              <a href="#">SHOP <i class="bi bi-caret-down-fill"></i></a>
-                              <div class="dropdown">
-                                <ul>
-                                      
-                                  <li><a href="#">Standard Product</a></li>
-                                  <li><a href="#">Grouped Product</a></li>
-                                  <li><a href="#">Variable Product</a></li>
-                                  <li><a href="#">Virtual Product</a></li>
-                                  <li><a href="#">External Product</a></li>
-                                  <li><a href="#">Downloadable Product</a></li>
-                                  <li><a href="#">On Sale Product</a></li>
-                                  <li><a href="#">New Product</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li >
-                              <a href="#">PORTFOLIO <i class="bi bi-caret-down-fill"></i></a>
+                        <div class="bottom">
+                            <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/h2-sign-img.png"
+                                alt="">
+                        </div>
+
+
+                    </div>
                     
-                              <div class="dropdown">
-                                <ul>
-                                  <li><a href="#">Standard</a></li>
-                                  <li><a href="#">Gallery</a></li>
-                                  <li><a href="#">Masonry</a></li>
-                                  <li>
-                                    <a href="#">Portfolio Layouts</a>
-                                 
-                                  </li>
-                                  <li>
-                                    <a href="#">Portfolio Single </a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                              
-                            </li>
-                            <li >
-                              <a href="#">BLOG <i class="bi bi-caret-down-fill"></i></a>
-                              <div class="dropdown">
-                                <ul>
-                                  <li><a href="#">Masonry</a></li>
-                                  <li><a href="#">Standard</a></li>
-                                  <li >
-                                    <a href="#">Post Types</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li >
-                              <a href="#">ELEMENTS <i class="bi bi-caret-down-fill"></i></a>
-                              <div class="dropdown">
-                                <ul>
-                                  <li >
-                                    <a href="#">Classic</a>
-                                    <i class="bi bi-chevron-right"></i>
-                                  </li>
-                                  <li>
-                                    <a href="#">Infographic</a>
-                                    <i class="bi bi-chevron-right"></i>
-                                  </li>
-                                  <li >
-                                    <a href="#">Interactive</a>
-                                    <i class="bi bi-chevron-right"></i>
-                                  </li>
-                                  <li >
-                                   
-                                    <a href="#">Typographic</a>
-                                    <i class="bi bi-chevron-right"></i>
-                                  </li>
-                                </ul>
-                              </div>
-                            </li>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="custom_right">
+                          
+                        <h2 class="top">
+                            Get in Touch!</h2>
+                    <div class="center">
+
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostr. Mauris in erat justullam ac urna eu felis dapib
+                    </div>
+
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your Full Name..." id="name">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="tel" name="tel" id="tel" placeholder="Phone">
+                        <textarea name="message" id="message" cols="40" rows="10" placeholder="Write something..."></textarea>
+                        <button type="submit" class="msg">Send Message</button>
+                    </form>
                     
-                          </ul>
-                       </div>
-                      </div>
-                   
-                   </div>
-                  
+                    </div>
                 </div>
             </div>
-           </div>
-        </div> 
+        </section>
+    </main>
 
-         <!-- Footer created -->
- <footer>
-    <div class="container py-5">
-        <div class="row foot_top">
-            
+    <!-- Footer created -->
+    <footer>
+        <div class="container py-5">
+            <div class="row foot_top">
+
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="inner">
                         <h6>CUSTOMER SERVICE</h6>
@@ -389,11 +456,11 @@
                         </ul>
                     </div>
                 </div>
-            
 
-        </div>
-        <div class="row foot_bottom">
-          
+
+            </div>
+            <div class="row foot_bottom">
+
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <p class="copyright">© 2018 Qode Interactive, All Rights Reserved</p>
                 </div>
@@ -409,31 +476,32 @@
                         <span><a href="">INSTAGRAM</a></span>
                     </div>
                 </div>
-           
+
+            </div>
         </div>
-    </div>
-</footer>
-<!-- To-top created -->
-<a href="#" class="to_top">
-<i class="bi bi-chevron-double-up"></i>
-</a>
+    </footer>
+    <!-- To-top created -->
+    <!-- <a href="#" class="to_top">
+        <i class="bi bi-chevron-double-up"></i>
+    </a> -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-crossorigin="anonymous"></script>
-<!-- <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <!-- <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-<!-- Swiper JS -->
-<script src="../src/app/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- Swiper JS -->
+    <script src="../src/app/swiper-bundle.min.js"></script>
 
-<script src="../src/app/app.js"></script>
+    <script src="../src/app/app.js"></script>
 
 </body>
+
 </html>
