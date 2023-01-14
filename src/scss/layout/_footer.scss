@@ -1,6 +1,6 @@
 footer {
     background-color: #fefaf3;
-    .foot_top {
+    .foot_top {  flex-wrap: wrap;
         padding-bottom: 50px;
         ul {
             margin: 0;
@@ -29,9 +29,13 @@ footer {
     }
     
     .foot_bottom {
+        flex-wrap: wrap;
         padding-top: 50px;
         border-top: 1px solid #abb8c3;
         opacity: 0.5;
+     
+
+    
         .copyright {
             text-decoration: none;
             color: #6d6a6a;
@@ -39,14 +43,30 @@ footer {
             font-size: 12px;
             line-height: 24px;
             padding: 0 0 3px;
+            text-align: left;
+            @media screen and (max-width:768px){
+              
+                text-align: center;
+                
+            }
     
         }
         .visa {
             text-align: center;
+         
         }
     
-        .media {
-            float: right;
+        .media {display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            
+            @media screen and (max-width:768px){
+              margin-top: 10px;
+                align-items: center;
+                justify-content: center;
+                
+            }
+        
     
             span {
                 margin-right: 5px;
