@@ -1213,6 +1213,7 @@ main #orange .rose_gallery {
 @media screen and (max-width: 990px) {
   main #orange .rose_gallery {
     flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -1263,7 +1264,6 @@ main #orange .custom_right .cart {
   gap: 5px;
 }
 main #orange .custom_right .cart .form_label {
-  background-color: green;
   display: flex;
   width: 50%;
   border: 1px solid #eee;
@@ -1274,15 +1274,12 @@ main #orange .custom_right .cart .form_label span {
   padding: 0 3px;
   color: #999;
   display: block;
-  background-color: blue;
 }
 main #orange .custom_right .cart .form_label span i {
-  background-color: red;
   font-size: 12px;
   cursor: pointer;
 }
 main #orange .custom_right .cart .form_label .quan {
-  background-color: gold;
   margin: 0 130px 0 20px;
   font-size: 14px;
   text-align: center;
@@ -1332,6 +1329,11 @@ main #orange .custom_right .product_meta ul li span {
 main #filtered .buttons {
   display: flex;
 }
+@media screen and (max-width: 990px) {
+  main #filtered .buttons {
+    flex-direction: column;
+  }
+}
 main #filtered .buttons .msg {
   background-color: white;
   border: 1px solid rgba(175, 175, 175, 0.4392156863);
@@ -1350,11 +1352,10 @@ main #filtered .buttons .msg:hover {
   color: white;
 }
 main #filtered #objects {
-  margin: 0;
-  padding: 0;
+  margin: 0 0 30px 0;
 }
 main #filtered #objects #ob1 {
-  height: 288px;
+  display: block;
   border: 1px solid rgba(175, 175, 175, 0.4392156863);
 }
 main #filtered #objects #ob1 .custom_right {
@@ -1380,7 +1381,7 @@ main #filtered #objects #ob1 .custom_right .center {
   text-align: left;
 }
 main #filtered #objects #ob2 {
-  height: 288px;
+  display: none;
   border: 1px solid rgba(175, 175, 175, 0.4392156863);
 }
 main #filtered #objects #ob2 .product_meta {
@@ -1403,7 +1404,7 @@ main #filtered #objects #ob2 .product_meta ul li span {
   color: #2b2b2b;
 }
 main #filtered #objects #ob3 {
-  height: auto;
+  display: none;
   border: 1px solid rgba(175, 175, 175, 0.4392156863);
 }
 main #filtered #objects #ob3 .custom_right {

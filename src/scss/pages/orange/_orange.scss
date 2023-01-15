@@ -73,11 +73,18 @@ main {
 
             @media screen and(max-width:990px) {
                 flex-direction: row;
+                display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
 
             }
+            // .gallery_item{
+            //     display: flex;
+            //     justify-content: center;
+            //     align-items: center;
+            //     width: 100%;
+            // }
 
         }
         .big_gallery {
@@ -134,7 +141,7 @@ main {
 
 
                 .form_label {
-                    background-color: green;
+                 
                     display: flex;
                     width: 50%;
                     border: 1px solid #eee;
@@ -145,16 +152,16 @@ main {
                         // margin: 0 ;
                         color: #999;
                         display: block;
-                        background-color: blue;
+                        
                         i {
-                            background-color: red;
+                           
                             font-size: 12px;
                             cursor: pointer;
                         }
 
                     }
                     .quan {
-                        background-color: gold;
+                      
                         margin: 0 130px 0 20px;
                         font-size: 14px;
                         text-align: center;
@@ -217,7 +224,16 @@ main {
     #filtered {
         .buttons {
             display: flex;
+
+            
+            @media screen and(max-width:990px) {
+                flex-direction: column;
+
+            }
+
+
             .msg {
+               
 
                 background-color: white;
                 border: 1px solid #afafaf70;
@@ -238,10 +254,10 @@ main {
             }
 
         }
-        #objects {margin: 0;
-            padding: 0;
-            #ob1 {
-                height: 288px;
+        #objects {margin:0 0 30px 0 ;
+           
+            #ob1 {display: block;
+                
                 border: 1px solid #afafaf70;
 
                 .custom_right {
@@ -276,8 +292,8 @@ main {
 
                 }
             }
-            #ob2{
-                height: 288px;
+            #ob2{display: none;
+             
                 border: 1px solid #afafaf70;
                 .product_meta {
                     padding: 80px 0;
@@ -303,8 +319,8 @@ main {
                 
 
             }
-            #ob3{ 
-                height: auto;
+            #ob3{ display: none;
+          
                 border: 1px solid #afafaf70;
                 .custom_right{
                     padding: 50px 0;

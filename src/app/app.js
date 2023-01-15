@@ -205,3 +205,65 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+
+
+
+const ClickOb1 = document.getElementById('ob1')
+const ClickOb2 = document.getElementById('ob2')
+const ClickOb3 = document.getElementById('ob3')
+
+const ClBtn1 = document.getElementById('btn1')
+const ClBtn2 = document.getElementById('btn2')
+const ClBtn3 = document.getElementById('btn3')
+
+
+ClBtn1.addEventListener('click', () => {
+    ClickOb1.style.display = 'block';
+    ClickOb2.style.display = 'none';
+    ClickOb3.style.display = 'none';
+ 
+})
+
+ClBtn2.addEventListener('click', () => {
+    ClickOb2.style.display = 'block';
+    ClickOb1.style.display = 'none';
+    ClickOb3.style.display = 'none';
+  
+})
+
+ClBtn3.addEventListener('click', () => {
+    ClickOb3.style.display = 'block';
+    ClickOb2.style.display = 'none';
+    ClickOb1.style.display = 'none';
+})
+
+
+
+// const Add=document.querySelector('.txt_input')
+// const Minus=document.querySelector('.bi-caret-left-fill')
+// const Plus=document.querySelector('.bi-caret-right-fill');
+
+// Plus.addEventListener('click',()=>{
+//     let a =0;
+//     a++;  
+//     Add.innerText=a;
+// });
+// Minus.addEventListener('click',()=>{
+//     let a =0;
+//     a--;
+//     Add.innerText=a;
+// });
+
+// for (let index = 0; index < array.length; index++) {
+//     const element = array[index];
+    
+// }
+
+// function totalclick(click){
+//     const totalClicks=document.getElementById('totalClicks');
+//     const sumvalue= parseInt(totalClicks.innertext) +click;
+//     totalClicks.innertext
+//     console.log(sumvalue + click)=sumvalue;
+// }
