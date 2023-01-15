@@ -163,3 +163,32 @@ if (Kati) {
 // const Src =document.querySelector('.search')
 // const Bx =document.querySelector('.search_box')
 
+
+// const slider=document.querySelector('input')
+// const value=document.querySelector('.value')
+
+// value.textContent = slider.value;
+
+// slider.oninput=function(){
+//     value.textContent=this.value;
+   
+// }
+
+
+const rangeInput=document.querySelectorAll('.range input');
+const priceInput=document.querySelectorAll('.field input');
+const progress=document.querySelector('.slider .progress');
+
+rangeInput.forEach(input=>{
+    input.addEventListener('input',()=>{
+        let minVal = parseInt(rangeInput[0].value);
+        let maxVal = parseInt(rangeInput[1].value);
+
+       
+        
+        priceInput[0].value=minVal;
+        priceInput[1].value=maxVal;
+        
+        
+    })
+})
