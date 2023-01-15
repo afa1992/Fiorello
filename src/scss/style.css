@@ -1031,7 +1031,7 @@ footer .foot_bottom .media span a {
 }
 #navbar .menu ul li:hover ::before {
   width: 100%;
-  transition: width 0.2s ease-in-out;
+  transition: width 0.5s ease-in-out;
   opacity: 1;
 }
 #navbar .menu ul li a {
@@ -1045,7 +1045,7 @@ footer .foot_bottom .media span a {
   text-transform: uppercase;
   line-height: 22px;
   letter-spacing: 0.1em;
-  transition: width 0.2s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 #navbar .menu ul li a::before {
   content: "";
@@ -1055,7 +1055,7 @@ footer .foot_bottom .media span a {
   top: 100%;
   left: 0;
   width: 0;
-  transition: width 0.2s ease-in-out;
+  transition: width 0.5s ease-in-out;
   opacity: 0;
 }
 #navbar .menu ul .home {
@@ -1064,7 +1064,7 @@ footer .foot_bottom .media span a {
 #navbar .menu ul .home:hover .dropdown {
   height: 230px;
   opacity: 1;
-  transition: 0.2s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 #navbar .menu ul .home .ho {
   border-bottom: 1px solid #1b1b1b;
@@ -1078,7 +1078,7 @@ footer .foot_bottom .media span a {
   left: -25%;
   width: 200px;
   opacity: 0;
-  transition: 0.2s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 #navbar .menu ul .home .dropdown ul {
   margin: 0;
@@ -1089,7 +1089,7 @@ footer .foot_bottom .media span a {
 }
 #navbar .menu ul .home .dropdown ul .dr_item:hover ::before {
   width: 100%;
-  transition: width 0.2s ease-in-out;
+  transition: width 0.5s ease-in-out;
   opacity: 1;
 }
 #navbar .menu ul .home .dropdown ul .dr_item a {
@@ -1110,7 +1110,7 @@ footer .foot_bottom .media span a {
   top: 70%;
   left: 0;
   width: 0;
-  transition: width 0.2s ease-in-out;
+  transition: width 0.5s ease-in-out;
   opacity: 0;
 }
 #navbar .menu ul .pages {
