@@ -1,0 +1,957 @@
+
+
+#navbar {
+    @media screen and (max-width:990px){
+        display: none;
+        
+    }
+
+
+ 
+    position: relative;
+    background-color: white;
+    width: 100%;
+    z-index: 666;
+    .logo {
+        width: 215px;
+     
+
+
+        img {
+            width: 100%;
+            height: 50px;
+            object-fit: contain;
+            cursor: pointer;
+
+        }
+    }
+
+    .menu {
+       
+
+        float: right;
+        margin-top: 10px;
+
+        ul {
+            align-items: center;
+            display: flex;
+            gap: 40px;
+
+            .add_cart {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                i {
+                    position: relative;
+                    text-decoration: none;
+                    font-family: 'Montserrat', sans-serif;
+                    cursor: pointer;
+                    color: #1b1b1b;
+                    font-size: 15px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    line-height: 22px;
+                    letter-spacing: 0.1em;
+
+                }
+                span {
+                    position: relative;
+                    text-decoration: none;
+                    font-family: 'Montserrat', sans-serif;
+                    cursor: pointer;
+                    color: #1b1b1b;
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    line-height: 22px;
+                    letter-spacing: 0.1em;
+
+                }
+            }
+
+            li {
+                list-style: none;
+                &:hover ::before {
+                    width: 100%;
+                    transition: width 0.5s ease-in-out;
+                    opacity: 1;
+
+                }
+
+
+                a {
+                    position: relative;
+                    text-decoration: none;
+                    font-family: 'Montserrat', sans-serif;
+                    cursor: pointer;
+                    color: #1b1b1b;
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    line-height: 22px;
+                    letter-spacing: 0.1em;
+                    transition: width 0.5s ease-in-out;
+                    &::before {
+                        content: '';
+                        height: 1px;
+                        background-color: #1b1b1b;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 0;
+                        transition: width 0.5s ease-in-out;
+                        opacity: 0;
+                    }
+
+                }
+            }
+
+            .home {
+                position: relative;
+                &:hover .dropdown {
+                    height: 230px;
+                    opacity: 1;
+                    transition: 0.5s ease-in-out;
+                }
+
+                .ho {
+                    border-bottom: 1px solid #1b1b1b;
+
+                }
+                .dropdown {
+                    padding-top: 20px;
+                    position: absolute;
+                    height: 0;
+                    background-color: white;
+                    top: 250%;
+                    left: -25%;
+                    width: 200px;
+                    opacity: 0;
+                    transition: 0.5s ease-in-out;
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        flex-direction: column;
+                        display: flex;
+                        gap: 0 !important;
+
+                        .dr_item {
+                            &:hover ::before {
+                                width: 100%;
+                                transition: width 0.5s ease-in-out;
+                                opacity: 1;
+
+                            }
+                            a {
+                                padding: 10px 5px;
+                                margin: 0;
+                                list-style: none;
+                                font-size: 10px;
+                                text-transform: capitalize;
+                                color: #1b1b1b;
+                                text-align: left;
+                                font-size: 13px;
+
+                                &::before {
+                                    content: '';
+                                    height: 1px;
+                                    background-color: #1b1b1b;
+                                    position: absolute;
+                                    top: 70%;
+                                    left: 0;
+                                    width: 0;
+                                    transition: width 0.5s ease-in-out;
+                                    opacity: 0;
+
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+            }
+
+            .pages {
+                position: relative;
+                &:hover .dropdown {
+                    height: 150px;
+                    opacity: 1;
+                    transition: 0.3s ease-in-out;
+                }
+
+
+                .dropdown {
+                    padding-top: 20px;
+                    position: absolute;
+                    height: 0;
+                    background-color: white;
+                    top: 250%;
+                    left: -25%;
+                    width: 200px;
+                    opacity: 0;
+                    transition: 0.3s ease-in-out;
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        flex-direction: column;
+                        display: flex;
+                        gap: 0 !important;
+
+                        .dr_item {
+                            &:hover ::before {
+                                width: 100%;
+                                transition: width 0.3s ease-in-out;
+                                opacity: 1;
+
+                            }
+                            a {
+                                padding: 10px 5px;
+                                margin: 0;
+                                list-style: none;
+                                font-size: 10px;
+                                text-transform: capitalize;
+                                color: #1b1b1b;
+                                text-align: left;
+                                font-size: 13px;
+
+                                &::before {
+                                    content: '';
+                                    height: 1px;
+                                    background-color: #1b1b1b;
+                                    position: absolute;
+                                    top: 70%;
+                                    left: 0;
+                                    width: 0;
+                                    transition: width 0.2s ease-in-out;
+                                    opacity: 0;
+
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+            }
+
+            .shop {
+                position: relative;
+                &:hover .dropdown {
+                    height: 300px;
+                    opacity: 1;
+                    transition: 0.2s ease-in-out;
+                }
+
+
+                .dropdown {
+                    padding-top: 20px;
+                    position: absolute;
+                    height: 0;
+                    background-color: white;
+                    top: 250%;
+                    left: -2000%;
+                    width: 1300px;
+                    opacity: 0;
+                    transition: 0.2s ease-in-out;
+
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        flex-direction: column;
+                        display: flex;
+                        gap: 0 !important;
+                        p{
+                            font-family: "Playfair Display",serif;
+    font-size: 22px;
+    text-transform: none;
+    line-height: 1.1em;
+    color: #1b1b1b;
+    font-weight: 500;
+                        }
+
+                        .dr_item {
+                            &:hover ::before {
+                                width: 100%;
+                                transition: width 0.2s ease-in-out;
+                                opacity: 1;
+
+                            }
+                            a {
+                                padding: 10px 5px;
+                                margin: 0;
+                                list-style: none;
+                                font-size: 10px;
+                                text-transform: capitalize;
+                                color: #1b1b1b;
+                                text-align: left;
+                                font-size: 13px;
+
+                                &::before {
+                                    content: '';
+                                    height: 1px;
+                                    background-color: #1b1b1b;
+                                    position: absolute;
+                                    top: 70%;
+                                    left: 0;
+                                    width: 0;
+                                    transition: width 0.2s ease-in-out;
+                                    opacity: 0;
+
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+
+            }
+
+            .portfolio {
+                position: relative;
+                &:hover .dropdown {
+                    height: 150px;
+                    opacity: 1;
+                    transition: 0.3s ease-in-out;
+                }
+                .dropdown {
+                    padding-top: 20px;
+                    position: absolute;
+                    height: 0;
+                    background-color: white;
+                    top: 250%;
+                    left: -25%;
+                    width: 200px;
+                    opacity: 0;
+                    transition: 0.3s ease-in-out;
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        flex-direction: column;
+                        display: flex;
+                        gap: 0 !important;
+
+
+                        .dr_item {
+                            &:hover ::before {
+                                width: 100%;
+                                transition: width 0.3s ease-in-out;
+                                opacity: 1;
+
+                            }
+
+                            i {
+                                font-size: 8px;
+                            }
+
+
+                            a {
+                                padding: 10px 5px;
+                                list-style: none;
+                                font-size: 10px;
+                                text-transform: capitalize;
+                                color: #1b1b1b;
+                                text-align: left;
+                                font-size: 13px;
+
+                                &::before {
+                                    content: '';
+                                    height: 1px;
+                                    background-color: #1b1b1b;
+                                    position: absolute;
+                                    top: 70%;
+                                    left: 0;
+                                    width: 0;
+                                    transition: width 0.2s ease-in-out;
+                                    opacity: 0;
+
+                                }
+
+                            }
+
+                        }
+                        .dr_item_sml {
+
+                            &:hover ::before {
+                                width: 100%;
+                                transition: width 0.3s ease-in-out;
+                                opacity: 1;
+                                
+
+                            }
+                            &:hover .sml {
+                            //    display: block;
+                                opacity: 1;
+                                width: 200px;
+                                transition: 0.3s ease-in-out;
+                            }
+                            a {
+                                padding: 10px 5px;
+                                list-style: none;
+                                font-size: 10px;
+                                text-transform: capitalize;
+                                color: #1b1b1b;
+                                text-align: left;
+                                font-size: 13px;
+
+                                &::before {
+                                    content: '';
+                                    height: 1px;
+                                    background-color: #1b1b1b;
+                                    position: absolute;
+                                    top: 70%;
+                                    left: 0;
+                                    width: 0;
+                                    transition: width 0.2s ease-in-out;
+                                    opacity: 0;
+
+                                }
+
+                            }
+                            .sml {
+                                // display: none;
+                                opacity: 0;
+                               padding: 20px;
+                                position: absolute;
+                                background-color:white;
+                               left: 100%;
+                                top: 80%;
+                                width: 0;
+                                height: 150px;
+                                transition: 0.3s ease-in-out;
+                            
+                                .small_item {
+                                    &:hover ::before {
+                                        width: 100%;
+                                        transition: width 0.3s ease-in-out;
+                                        opacity: 1;
+    
+                                    }
+                                    a {
+                                        padding: 10px 5px;
+                                        list-style: none;
+                                        font-size: 10px;
+                                        text-transform: capitalize;
+                                        color: #1b1b1b;
+                                        text-align: left;
+                                        font-size: 13px;
+
+                                        &::before {
+                                            content: '';
+                                            height: 1px;
+                                            background-color: #1b1b1b;
+                                            position: absolute;
+                                            top: 70%;
+                                            left: 0;
+                                            width: 0;
+                                            transition: width 0.2s ease-in-out;
+                                            opacity: 0;
+
+                                        }
+
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                }
+
+             
+
+
+            }
+
+            .blog {
+                position: relative;
+                &:hover .dropdown {
+                    height: 150px;
+                    opacity: 1;
+                    transition: 0.3s ease-in-out;
+                }
+                .dropdown {
+                    padding-top: 20px;
+                    position: absolute;
+                    height: 0;
+                    background-color: white;
+                    top: 250%;
+                    right: 0%;
+                    width: 200px;
+                    opacity: 0;
+                    transition: 0.3s ease-in-out;
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        flex-direction: column;
+                        display: flex;
+                        gap: 0 !important;
+
+
+                        .dr_item {
+                            &:hover ::before {
+                                width: 100%;
+                                transition: width 0.3s ease-in-out;
+                                opacity: 1;
+
+                            }
+
+                            i {
+                                font-size: 8px;
+                            }
+
+
+                            a {
+                                padding: 10px 5px;
+                                list-style: none;
+                                font-size: 10px;
+                                text-transform: capitalize;
+                                color: #1b1b1b;
+                                text-align: left;
+                                font-size: 13px;
+
+                                &::before {
+                                    content: '';
+                                    height: 1px;
+                                    background-color: #1b1b1b;
+                                    position: absolute;
+                                    top: 70%;
+                                    left: 0;
+                                    width: 0;
+                                    transition: width 0.2s ease-in-out;
+                                    opacity: 0;
+
+                                }
+
+                            }
+
+                        }
+                        .dr_item_sml {
+
+                            &:hover ::before {
+                                width: 100%;
+                                transition: width 0.3s ease-in-out;
+                                opacity: 1;
+                                
+
+                            }
+                            &:hover .sml {
+                            //    display: block;
+                                opacity: 1;
+                                width: 200px;
+                                transition: 0.3s ease-in-out;
+                            }
+                            a {
+                                padding: 10px 5px;
+                                list-style: none;
+                                font-size: 10px;
+                                text-transform: capitalize;
+                                color: #1b1b1b;
+                                text-align: left;
+                                font-size: 13px;
+
+                                &::before {
+                                    content: '';
+                                    height: 1px;
+                                    background-color: #1b1b1b;
+                                    position: absolute;
+                                    top: 70%;
+                                    left: 0;
+                                    width: 0;
+                                    transition: width 0.2s ease-in-out;
+                                    opacity: 0;
+
+                                }
+
+                            }
+                            .sml {
+                                // display: none;
+                                opacity: 0;
+                               padding: 20px;
+                                position: absolute;
+                                background-color:white;
+                               left: 100%;
+                                top: 80%;
+                                width: 0;
+                                height: 150px;
+                                transition: 0.3s ease-in-out;
+                            
+                                .small_item {
+                                    &:hover ::before {
+                                        width: 100%;
+                                        transition: width 0.3s ease-in-out;
+                                        opacity: 1;
+    
+                                    }
+                                    a {
+                                        padding: 10px 5px;
+                                        list-style: none;
+                                        font-size: 10px;
+                                        text-transform: capitalize;
+                                        color: #1b1b1b;
+                                        text-align: left;
+                                        font-size: 13px;
+
+                                        &::before {
+                                            content: '';
+                                            height: 1px;
+                                            background-color: #1b1b1b;
+                                            position: absolute;
+                                            top: 70%;
+                                            left: 0;
+                                            width: 0;
+                                            transition: width 0.2s ease-in-out;
+                                            opacity: 0;
+
+                                        }
+
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                }
+
+             
+
+
+            }
+
+
+
+            .elements {
+                position: relative;
+                &:hover .dropdown {
+                    height: 150px;
+                    opacity: 1;
+                    transition: 0.3s ease-in-out;
+                }
+                .dropdown {
+                    padding-top: 20px;
+                    position: absolute;
+                    height: 0;
+                    background-color: white;
+                    top: 250%;
+                    left: -25%;
+                    width: 200px;
+                    opacity: 0;
+                    transition: 0.3s ease-in-out;
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        flex-direction: column;
+                        display: flex;
+                        gap: 0 !important;
+
+
+                        .dr_item {
+                            &:hover ::before {
+                                width: 100%;
+                                transition: width 0.3s ease-in-out;
+                                opacity: 1;
+
+                            }
+
+                            i {
+                                font-size: 8px;
+                            }
+
+
+                            a {text-align: right;
+                                padding: 10px 0;
+                                list-style: none;
+                                font-size: 10px;
+                                text-transform: capitalize;
+                                color: #1b1b1b;
+                                text-align: left;
+                                font-size: 13px;
+
+                                &::before {
+                                    content: '';
+                                    height: 1px;
+                                    background-color: #1b1b1b;
+                                    position: absolute;
+                                    top: 70%;
+                                    left: 0;
+                                    width: 0;
+                                    transition: width 0.2s ease-in-out;
+                                    opacity: 0;
+
+                                }
+
+                            }
+
+                        }
+                        .dr_item_sml {
+
+                            &:hover ::before {
+                                width: 100%;
+                                transition: width 0.3s ease-in-out;
+                                opacity: 1;
+                                
+
+                            }
+                            &:hover .sml {
+                            //    display: block;
+                                opacity: 1;
+                                width: 200px;
+                                transition: 0.3s ease-in-out;
+                            }
+                            a {
+                                padding: 10px 5px;
+                                list-style: none;
+                                font-size: 10px;
+                                text-transform: capitalize;
+                                color: #1b1b1b;
+                                text-align: left;
+                                font-size: 13px;
+
+                                &::before {
+                                    content: '';
+                                    height: 1px;
+                                    background-color: #1b1b1b;
+                                    position: absolute;
+                                    top: 70%;
+                                    left: 0;
+                                    width: 0;
+                                    transition: width 0.2s ease-in-out;
+                                    opacity: 0;
+
+                                }
+
+                            }
+                            .sml {
+                                // display: none;
+                                opacity: 0;
+                               padding: 20px;
+                                position: absolute;
+                                background-color:white;
+                               right:100%;
+                                top: 80%;
+                                width: 0;
+                                height: 250px;
+                                transition: 0.3s ease-in-out;
+                            
+                                .small_item {
+                                    &:hover ::before {
+                                        width: 100%;
+                                        transition: width 0.3s ease-in-out;
+                                        opacity: 1;
+    
+                                    }
+                                    a {
+                                        padding: 10px 5px;
+                                        list-style: none;
+                                        font-size: 10px;
+                                        text-transform: capitalize;
+                                        color: #1b1b1b;
+                                        text-align: left;
+                                        font-size: 13px;
+
+                                        &::before {
+                                            content: '';
+                                            height: 1px;
+                                            background-color: #1b1b1b;
+                                            position: absolute;
+                                            top: 70%;
+                                            left: 0;
+                                            width: 0;
+                                            transition: width 0.2s ease-in-out;
+                                            opacity: 0;
+
+                                        }
+
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                }
+
+             
+
+
+            }
+
+            .search {position: relative;
+                i {
+                    cursor: pointer;
+                    &:hover {
+                        color: red;
+                    }
+                }
+                .search_box {display: none;
+                    form {
+                        display: flex;
+                        position: absolute;
+                        top: 250%;
+                        right: 15%;
+                        border: 1px solid transparent;
+
+                        input {
+                            border: 1px solid transparent;
+                            padding: 15px;
+                            outline: none;
+
+                        }
+
+                        .button {
+                            background-color: white;
+                            border: 1px solid transparent;
+                            padding-right: 5px;
+                        }
+                    }
+                }
+            }
+
+            .add_cart {
+                position: relative;
+                &:hover .dropdown {
+                    height: 50px;
+                    opacity: 1;
+                    transition: 0.3s ease-in-out;
+                }
+
+
+               .dropdown{
+                width: 200px;
+                position: absolute;
+                overflow: hidden;
+                top: 275%;
+                right: 0;
+                background-color:white;
+                height: 0;
+                padding: 10px 5px;
+                transition: 0.3s ease-in-out;
+                opacity: 0;
+
+                .cart{
+                    font-size: 14px;
+                    color: #1b1b1b;
+                }
+               }
+            }
+
+        }
+    }
+}
+.mobil_nav{
+    display: none;
+    @media screen and (max-width:990px){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0;
+       
+      
+    }
+    .logo {
+        width: 215px;
+       
+     
+
+
+        img {
+            width: 100%;
+            height: 50px;
+            object-fit: contain;
+            cursor: pointer;
+
+        }
+    }
+
+    .nav_toggle{
+        z-index: 5;
+        position: relative;
+        display: flex;
+        justify-content: end;
+ 
+    .open{padding: 5px;
+       
+        .bi-list{
+            
+            font-size: 30px;
+           
+        }
+    }
+        .nav_box{  display: none;
+            z-index: 66;
+            position: absolute;
+            top:99%;
+            background-color: white;
+            right: 0;
+            width: 300px;
+
+           .res_menu{
+            padding: 30px;
+            overflow: hidden;
+            ul{
+              li{
+                list-style: none;
+                &:hover .dropdown{
+                    opacity: 1;
+                    height: auto;
+                    transition: .3s ease-in-out;
+
+                }
+               
+                a{   padding: 10px 5px;
+                    margin: 0;
+                    list-style: none;
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    color: #1b1b1b;
+                    text-align: left;
+                    font-size: 13px;
+                    text-decoration: none;
+                    i{
+                        font-size: 13px;
+                        
+                    }
+
+                        
+                }
+                .dropdown{
+             
+                    opacity: 0;
+                    height: 0;
+                    transition: .3s ease-in-out;
+                    li{
+                        a{padding: 10px 5px;
+                            margin: 0;
+                            list-style: none;
+                            font-size: 10px;
+                            text-transform: capitalize;
+                            color: #1b1b1b;
+                            text-align: left;
+                            font-size: 13px;
+                            text-decoration: none;
+
+                        }
+                    }
+                }
+              }
+            }
+           }
+            .close_btn{
+                float: right;
+                
+                i{color: red;
+                    font-size: 20px;
+                    font-weight: 400;
+                    padding-right: 5px;
+                    
+                }
+            
+  
+    }
+        }
+      
+    }
+    
+}
