@@ -378,20 +378,19 @@ main {
                     cursor: pointer;
                     background-color: white;
                     &:hover {
-                        color: red;
+                        color: $orange-color;
                     }
 
 
                 }
                 .active {
 
-                    background-color: white;
-
+                    background-color: $white-color;
                     font-size: 14px;
                     font-family: 'Montserrat', sans-serif;
                     text-transform: uppercase;
                     text-decoration: none;
-                    color: red;
+                    color: $orange-color;
                     padding: 8px 15px;
                     font-weight: 500;
                     cursor: pointer;
@@ -401,7 +400,7 @@ main {
             .filter {
                 position: relative;
                 float: right;
-                background-color: white;
+                background-color:$white-color;
                 border: 1px solid transparent;
                 font-size: 14px;
                 font-family: 'Montserrat', sans-serif;
@@ -421,14 +420,13 @@ main {
                     right: 0;
                     background-color: white;
                     width: 400px;
-
                     height: 200px;
                     display: none;
                     opacity: 0;
                     ul {
                         h5 {
                             margin: 20px 0;
-                            color: #2b2b2b;
+                            color: $black-second-txtcolor;
                             font-family: "Playfair Display", serif;
                             font-weight: 400;
                             font-size: 22px;
@@ -440,7 +438,7 @@ main {
                             font-size: 14px;
                             text-transform: capitalize;
                             font-weight: 500;
-                            color: #6d6a6a;
+                            color: $gray-txtcolor;
 
                         }
                     }
